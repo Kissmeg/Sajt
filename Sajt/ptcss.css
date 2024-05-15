@@ -1,0 +1,130 @@
+/*---------------------Nav-menu--------------------------*/
+body, header, nav, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li {
+    margin-right: 20px; /* Prostor između stavki */
+}
+
+nav ul li a, nav ul li button {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    font-family: Arial, sans-serif; 
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+nav ul li a:hover, nav ul li button:hover {
+    background-color: #555;
+}nav ul li {
+    opacity: 0; 
+    transform: translateX(-20px); /* Pomeranje stavki s leva na desno za 20 piksela */
+    animation: slideInRight 0.5s ease forwards; 
+}
+/* Pozicioniranje dugmeta sa desne strane */
+nav ul .right {
+    margin-left: auto;
+}
+/* Ključna animacija */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/*------------------Privatni Treninzi--------------------*/
+
+.pt-body{
+	background-color: #929292;
+	 font-family: 'Lato', sans-serif;
+}
+.rounded-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px; /* Zaobljene ivice */
+    background-color: #007bff; 
+    color: #fff; 
+    text-decoration: none; /* Bez podvlačenja linkova */
+    margin: 10px; /* Margina između dugmadi */
+}
+
+
+.rounded-button:hover {
+    background-color: #0056b3;
+}
+
+ .box {
+  float: left;
+  width: calc(50% - 5px);
+  margin-right: 5px;
+  padding: 8px;
+ text-align: right;
+  box-sizing: border-box;
+}
+
+.box:last-child {
+  margin: 1 0 0 10px;
+
+}
+.box div {
+    margin-bottom: 5px; /* Smanjujemo razmak između checkbox-a i teksta */
+}
+
+
+.box {
+    text-align: right;
+    margin-bottom: 20px; 
+}
+
+.pt-rounded-button {
+    display: block; 
+    margin: 20px auto; 
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #007bff;
+    color: #fff; 
+    text-decoration: none;
+}
+
+
+.pt-rounded-button:hover {
+    background-color: #0056b3; 
+}
+
+.input-group {
+    text-align: left;
+    padding-left: 100px; 
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.footer-content p, .footer-content a {
+    margin: 5px 0;
+}
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	
+    <link rel="stylesheet" type="text/css" href="vezbecss.css"/>
+    <title>Vezbe</title>
+</head>
+
+<body>
+<body>
+  <header>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Teretana.html">Teretana</a></li>
+            <li><a href="Vezbe.html">Vezbe</a></li>
+            <li><a href="PrivatniTreninzi.html">Privatni Treninzi</a></li>
+			<li class="right"><button onclick="chBackcolor('#5B5B5B');">Promeni boju</button></li>
+        </ul>
+    </nav>
+</header>
+
+<script src="skripta.js"></script>
+
+    <form id="form1" runat="server">
+        <p>
+            Misic:
+            <select id="DropDownList1" name="DropDownList1">
+                <option value="">Izaberi misic</option>
+                <option value="Grudi">Grudi</option>
+                <option value="Ledja">Ledja</option>
+                <option value="Noge">Noge</option>
+                <option value="Ruke">Ruke</option>
+                <option value="Ramena">Ramena</option>
+            </select>
+        </p>
+        <button type="button" id="Button1" name="Button1" class="rounded-button" onclick="prikaziPodatke()">Trazi</button>
+            
+		
+        <table id="Table1" class="styled-table">
+        </table> Podmisici
+		<div></br>
+    <img src="galerija\slika1.png" alt="Grudi" onclick="prikaziPodmisice('Grudi')">
+    <img src="slika_ledja.jpg" alt="Ledja" onclick="prikaziPodmisice('Ledja')">
+    <img src="slika_ruke.jpg" alt="Ruke" onclick="prikaziPodmisice('Ruke')">
+    <img src="slika_noge.jpg" alt="Noge" onclick="prikaziPodmisice('Noge')">
+    <img src="slika_ramena.jpg" alt="Ramena" onclick="prikaziPodmisice('Ramena')">
+</div>
+
+<div id="Podmisic"></div>
+
+    </form>
+</body>
+<footer>
+    <div class="footer-content">
+        <p>Kontakt: +381 12 345 6789 | Email: info@powergym.rs</p>
+        <p>Radno vreme: Pon - Pet: 10:00 - 22:00, Sub - Ned: 14:00 - 20:00</p>
+        <div class="social-media">
+            <a href="https://facebook.com/powergym" target="_blank">Facebook</a> |
+            <a href="https://instagram.com/powergym" target="_blank">Instagram</a>
+        </div>
+        <div class="location">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d174.4806681818394!2d20.13561594367445!3d45.59676235633808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b2d9a97458ebd%3A0x91e5978040c30fa!2sGorki!5e0!3m2!1sen!2srs!4v1715685074100!5m2!1sen!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
+    </div>
+</footer>
+</html>

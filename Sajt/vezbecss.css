@@ -1,0 +1,122 @@
+/*------------------------Vezbe--------------------------*/
+
+.styled-table td:hover {
+    background-color: #f0f0f0; 
+    cursor: pointer; 
+}
+body{
+	background-color: #e4e4e4;
+	
+    text-align: center;
+	font-family: 'Lato', sans-serif;
+	
+}
+img {
+    width: 200px;
+    height: auto; 
+    margin: 10px; 
+    cursor: pointer;
+}
+
+
+select {
+    padding: 10px; 
+    font-size: 16px; 
+}
+/*Stilizovana tabela*/
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-top: 20px; 
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px;
+    border: 1px solid #ddd; 
+}
+
+.styled-table th {
+    background-color: #007bff; 
+    color: #fff; 
+}
+
+.styled-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.styled-table tr:hover td {
+    background-color: #ddd; 
+}
+
+
+
+
+
+/*---------------------Nav-menu--------------------------*/
+body, header, nav, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li {
+    margin-right: 20px; /* Prostor između stavki */
+}
+
+nav ul li a, nav ul li button {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    font-family: Arial, sans-serif; 
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+nav ul li a:hover, nav ul li button:hover {
+    background-color: #555;
+}nav ul li {
+    opacity: 0; 
+    transform: translateX(-20px); /* Pomeranje stavki s leva na desno za 20 piksela */
+    animation: slideInRight 0.5s ease forwards; 
+}
+/* Pozicioniranje dugmeta sa desne strane */
+nav ul .right {
+    margin-left: auto;
+}
+/* Ključna animacija */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/*Footer*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.footer-content p, .footer-content a {
+    margin: 5px 0;
+}
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+}

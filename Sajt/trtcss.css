@@ -1,0 +1,143 @@
+/*---------------------Teretana--------------------------*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.footer-content p, .footer-content a {
+    margin: 5px 0;
+}
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+    font-family: 'Roboto Slab', sans-serif; 
+}
+
+body{
+    background-color: #e4e4e4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* glavni container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif; 
+}
+
+/* naslovna */
+.naslov {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+/* slika */
+.image {
+    float: right;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+.image img {
+    max-width: 100%; 
+    height: auto; 
+    width: 100%; 
+    border-radius: 50%;
+}
+
+.znacaj {
+    margin-bottom: 20px;
+}
+
+/*---------------------Nav-menu--------------------------*/
+header {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px; /* Prostor između stavki */
+}
+
+nav ul li a, nav ul li button {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    font-family: Arial, sans-serif; 
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav ul li a:hover, nav ul li button:hover {
+    background-color: #555;
+}
+
+/* Animacija */
+nav ul li {
+    opacity: 0; 
+    transform: translateX(-20px); /* Pomeranje stavki s leva na desno za 20 piksela */
+    animation: slideInRight 0.5s ease forwards; 
+}
+/* Pozicioniranje dugmeta sa desne strane */
+nav ul .right {
+    margin-left: auto;
+}
+/* Ključna animacija */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Stilizovana tabela */
+.styled-table td:hover {
+    background-color: #f0f0f0; 
+    cursor: pointer; 
+}
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-top: 20px; 
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px;
+    border: 1px solid #ddd; 
+}
+
+.styled-table th {
+    background-color: #007bff; 
+    color: #fff; 
+}
+
+.styled-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.styled-table tr:hover td {
+    background-color: #ddd; 
+}
+

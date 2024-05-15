@@ -1,0 +1,27 @@
+.home-body {
+    background-color: #8a8a8a;
+    font-family: Arial, sans-serif;
+}
+
+.home-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home-rounded-button {
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 10px;
+    border-radius: 30px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.home-rounded-button:hover {
+    background-color: #0056b3;
+}
